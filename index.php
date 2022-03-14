@@ -35,7 +35,8 @@
 
     <main style="margin-top:100px;">
         <div class="recipe">
-            <?php echo newPost(); ?>
+            <h3><?php echo "This is a message from the backend" ?></h3>
+            <?php #echo newPost(); ?>
         </div>    
         <div class="recipe">
             <h3>Chicken soup</h3>
