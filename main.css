@@ -1,0 +1,224 @@
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*:before,
+*:after{
+	box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "avenir bold";
+  src: url("../fonts/25381880192.ttf");
+  font-weight:bold;
+}
+@font-face {
+  font-family: "avenir regular";
+  src: url("../fonts/26301410506.ttf");
+  font-weight:initial;
+}
+@font-face {
+  font-family: "avenir thin";
+  src: url("../fonts/30716573843.ttf");
+  font-weight:thin;
+}
+
+body{
+    background-color: #fff;
+  font-family: "avenir regular", sans-serif;
+  padding:0;
+  margin:0;
+}
+
+header img{
+  width: 80%;
+  max-width:400px;
+  float:left;
+}
+
+.header {
+  position:fixed;
+  width:100%;  
+  background-color: #f377b5;
+  box-shadow: 0px 3px 15px 0px rgb(151, 151, 151);
+}
+.header a h1 {
+    color:white;
+    font-family: "avenir bold", sans-serif;
+}
+.header a{
+    text-decoration:none;
+}
+
+#menu {
+    background-color: #FFFFFF;
+    margin-left:auto;
+    
+}
+
+#menu ul li a img{
+  width: 20px;
+}
+
+.menutoggle a{
+  color:#262626;
+}
+.menutoggle {
+  /* margin-top:2.3vh; */
+  float:right;
+  margin-right:20px;
+
+}
+
+.headmenu {
+  width:100%;
+  display:flex;
+  flex-flow:row;
+  align-items:center;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight:bold;
+}
+  
+nav ul li a:hover {
+  color: #5c5c5c;
+  text-decoration: underline;
+  transition: ease-in-out;
+  transition-duration: 10ms;
+}
+
+h1 {
+  text-align: center;
+  font-family: "avenir regular" ,verdana, sans-serif;
+
+}
+
+h2, h3 {
+  font-size: 1.5m;
+  font-family: "avenir bold" , verdana, sans-serif;
+  color:#262626;
+}
+
+.foot {
+    background-color: #FFFFFF;
+    border-top: 1px solid #262626;
+}
+
+
+/*--- Formulier -----*/
+
+.contact .container h2 {
+  margin-left: 20px;
+}
+
+.exit {
+    width: 50px;
+}
+
+.contact-form {
+  width: 40%;
+  margin:0;
+  float:left;
+}
+
+form {
+  margin-left: 20px;
+}
+
+input, textarea {
+  float: center;
+  background-color:bisque;
+  width: 100%;
+  border-radius: 12px;
+  border: 0;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 2%;
+  font-size: 16px;
+}
+
+.contact p {
+  font-family: "avenir bold" ,'Asap Condensed', verdana, sans-serif;
+}
+
+.submit {
+  width: 150px;
+  font-size: 1em;
+  float: right;
+  background-image: linear-gradient(to right, rgb(153, 0, 255) , rgb(255, 0, 149));
+  color: white;
+  font-weight:bold;
+  font-family: "avenir bold", verdana, sans-serif;
+  margin-top: 0;
+  padding: 10px;
+}
+
+select {
+  width: 30%;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.contact-icons {
+  width: 40%;
+  float: right;
+}
+
+
+
+
+
+
+
+
+/* ----------- I PAD VERSIE --------------- */
+
+@media only screen and (min-width: 601px){
+
+  
+}
+
+/* ------------ DESKTOP VERSIE -------------- */
+
+@media only screen and (min-width:1001px){
+  
+  header {
+    padding-left:100px;
+    padding-right:100px;
+  }
+
+  #menu {
+      background:none;
+  }
+
+  .headmenu {
+    width:initial;
+  }
+  
+  .left {
+    float:left;
+    width:48%;
+    background-color: #dbdbdb;
+    border-radius:10px;
+    padding:1.2em;
+  }
+
+  .contact .left {
+    width:100%;
+  }
+  
+  .right {
+    float:right;
+    width:48%;
+    background-color: #dbdbdb;
+    border-radius:10px;
+    padding:1.2em;
+  }
+}
